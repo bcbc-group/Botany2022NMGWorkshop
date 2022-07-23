@@ -33,7 +33,7 @@ for file in `dir -d *_1.fastq` ; do
     samfile=`echo "$file" | sed 's/_1.fastq/.sam/'`
     file2=`echo "$file" | sed 's/_1.fastq/_2.fastq/'`
 
-     hisat2 --max-intronlen 100000 --dta -p 6 -x contig_15 -1 $file -2 $file2 -S $samfile
+     hisat2 --max-intronlen 100000 --dta -p 4 -x contig_15 -1 $file -2 $file2 -S $samfile
 
 done
 
@@ -46,6 +46,6 @@ for file in `dir -d *sort.bam` ; do
 
     outdir=`echo "$file" |sed 's/.bam/.gtf/'`
 
-    /opt/stringtie/stringtie --rf -p 7 -o $outdir $file
+    stringtie --rf -p 4 -o $outdir $file
 
 done
