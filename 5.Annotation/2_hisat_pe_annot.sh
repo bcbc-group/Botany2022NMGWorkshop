@@ -4,11 +4,11 @@
 #                                                             #
 # usage:                                                      #
 #                                                             #
-#      hisat_pe_annot.sh $base_dir $CPU                       #
+#      hisat_pe_annot.sh                       #
 #                                                             #
 ###############################################################
 
-cd $1
+cd 
 
 #make a dir for your output and copy or symlink some files there
 #mkdir /scratch/annotation_output
@@ -20,6 +20,7 @@ cd $1
 sudo apt-get -y install hisat2
 
 #index reference fasta file; We will use only contig_15 for demo purposes
+mkdir annotation
 cp work/data/iplant/home/shared/Botany2020NMGWorkshop/annotation/tutorial/contig_15.fasta annotation/
 cd annotation
 hisat2-build contig_15.fasta contig_15
