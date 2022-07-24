@@ -43,6 +43,7 @@ ls *.sam |parallel --gnu -j 1 samtools view -Sb -o {.}.bam {}
 ls *.bam |parallel --gnu -j 1 samtools sort -o {.}.sort.bam {}
 
 #run stringtie to get gtf files of transcript annotations
+sudo apt-get install stringtie
 for file in `dir -d *sort.bam` ; do
 
     outdir=`echo "$file" |sed 's/.bam/.gtf/'`
