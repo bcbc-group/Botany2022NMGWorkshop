@@ -16,6 +16,7 @@ CyVerse account
 CoGe account
 
 Syllabus
+
 Introductions and overview genome sequencing and assembly 8 am (30 min) - Suzy & Gisel
 
 Setting hardware/software baseline skills 8:30 (45 min) - Gisel
@@ -25,9 +26,15 @@ Generate suitable DNA for different platforms: tips, tricks, and experimental de
 Break 9:45 am (45 min)
 
 Sequencing data and genome assembly options 10:30 am (1.5 h) - Jacob
+
 Break for lunch 12:00 pm (1 h)
+
 Genome assembly wrap up 1:00 (30 min) - Jacob
+
 Genome annotation 1:30 (1.5 h) - Suzy
+
 Break 3:00 pm (30 min)
+
 Downstream evolution analyses: genome management, genome visualization, comparative genomics, reference-based SNP calling, transcriptomics, and phylogenomics 3:30 (1 h) -  Jacob
+
 Wrap-up and discussion 4:30 - All
